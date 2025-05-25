@@ -4,8 +4,25 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
+import java.io.Serializable;
+
 @Entity
-public class Pessoa {
+public class Pessoa implements Serializable {
+    public Pessoa(String nome, String telefone, String email) {
+        this.nome = nome;
+        this.telefone = telefone;
+        this.email = email;
+    }
+
+    public Pessoa() {
+    }
+
+    public Pessoa(int codigo, String nome, String telefone, String email) {
+        this.codigo = codigo;
+        this.nome = nome;
+        this.telefone = telefone;
+        this.email = email;
+    }
 
     @PrimaryKey(autoGenerate = true)
     private int codigo;

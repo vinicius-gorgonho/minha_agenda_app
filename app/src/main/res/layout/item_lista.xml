@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    >
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FULANO"
+        android:layout_marginTop="08dp"
+        android:layout_marginBottom="04dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtTelefone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(65)3213 - 1312"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        />
+
+    <ImageButton
+        android:id="@+id/btnEditar"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="48dp"
+        android:background="@color/white"
+        android:src="@android:drawable/ic_menu_edit"
+        tools:src="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/btnExcluir"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:src="@android:drawable/ic_delete"
+        tools:src="@android:drawable/ic_delete" />
+</RelativeLayout>
